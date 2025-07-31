@@ -648,7 +648,7 @@
 
         const data = await response.json();
         if (!data.found) {
-          cpfError.textContent = "CPF não encontrado em nossa base de dados.";
+          cpfError.textContent = "CPF não encontrado.";
           return;
         }
 
@@ -666,7 +666,7 @@
         updateProgress(1);
       } catch (error) {
         console.error("Erro ao consultar CPF:", error);
-        cpfError.textContent = "Erro na comunicação com o servidor.";
+        cpfError.textContent = "Erro na comunicação, Tente novamente mais tarde...";
       }
     });
 

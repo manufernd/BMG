@@ -10,11 +10,11 @@ load_dotenv()
 def connection():
     try:
         conn = mysql.connector.connect(
-            host=os.getenv('DB_HOST'),
-            port= os.getenv('DB_PORT'),
-            user=os.getenv('DB_USER'),
-            password=os.getenv("DB_PASSWORD"),
-            database=os.getenv("DB_NAME")
+            host='hopper.proxy.rlwy.net',
+            port= 36628,
+            user='root',
+            password='NHtCUBtZvfQUgZOLpYIpVaCRPHZinqgo',
+            database='railway'
         )
         print('[✓] Conexão com MySQL realizada com sucesso!')
         return conn
