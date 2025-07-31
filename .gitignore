@@ -1,0 +1,43 @@
+# Ambiente virtual
+venv/
+ENV/
+env/
+
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Configurações locais
+*.env
+.env
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Banco de dados SQLite (se algum dia usar)
+*.sqlite3
+*.db
+
+# Arquivos temporários
+*.swp
+*.bak
+*.tmp
+
+# Arquivos gerados por IDEs
+.vscode/
+.idea/
+
+# Arquivos do Gunicorn (caso gere temporários)
+gunicorn.pid
+
+# Pasta do Build (caso um dia use)
+dist/
+build/
+
+# Node (caso use frontend no futuro)
+node_modules/
